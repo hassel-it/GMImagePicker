@@ -109,7 +109,7 @@ static CGSize const kPopoverContentSize = {480, 720};
  */
 @property (nonatomic, assign) BOOL confirmSingleSelection;
 
-@property (nonatomic, assign) BOOL _startWithAssets;
+@property (nonatomic, assign) BOOL startWithAssets;
 
 /**
  * If set, it displays this string (if confirmSingleSelection = YES) instead of the localised default.
