@@ -125,6 +125,7 @@
         _allowsMultipleSelection = YES;
         _confirmSingleSelection = NO;
         _showCameraButton = NO;
+        _startWithAssets = YES;
         
         // Grid configuration:
         if([self.delegate respondsToSelector:@selector(assetsPickerControllerColumnInPortrait)] && [self.delegate respondsToSelector:@selector(assetsPickerControllerColumnInLandscape)]) {
@@ -322,7 +323,9 @@
     
     
     // Push GMGridViewController
-    [_navigationController pushViewController:gridViewController animated:YES];
+    if (_startWithAssets) {
+        [_navigationController pushViewController:gridViewController animated:YES];
+    }
 }
 
 #pragma mark - UIAlertViewDelegate
