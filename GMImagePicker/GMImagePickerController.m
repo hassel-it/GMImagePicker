@@ -43,7 +43,8 @@
         _allowsMultipleSelection = YES;
         _confirmSingleSelection = NO;
         _showCameraButton = NO;
-        
+        _startWithAssets = YES;
+
         // Grid configuration:
         if([self.delegate respondsToSelector:@selector(assetsPickerControllerColumnInPortrait)] && [self.delegate respondsToSelector:@selector(assetsPickerControllerColumnInLandscape)]) {
             _colsInPortrait =  [self.delegate assetsPickerControllerColumnInPortrait];
