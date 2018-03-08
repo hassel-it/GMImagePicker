@@ -109,7 +109,7 @@
         
         _pickerStatusBarStyle = UIStatusBarStyleDefault;
         _barStyle = UIBarStyleDefault;
-        [self setupNavigationController];
+//        [self setupNavigationController];
     }
     return self;
 }
@@ -324,7 +324,7 @@
     
     
     // Push GMGridViewController
-    if (_startWithAssets) {
+    if (self.startWithAssets) {
         [_navigationController pushViewController:gridViewController animated:YES];
     }
 }

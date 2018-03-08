@@ -63,6 +63,8 @@
                 
                 picker.mediaTypes = @[@(PHAssetMediaTypeImage)];
                 
+                picker.startWithAssets = NO;
+                
                 //    picker.pickerBackgroundColor = [UIColor blackColor];
                 //    picker.pickerTextColor = [UIColor whiteColor];
                 //    picker.toolbarBarTintColor = [UIColor darkGrayColor];
@@ -84,6 +86,7 @@
                 popPC.sourceRect = _gmImagePickerButton.bounds;
                 //    popPC.backgroundColor = [UIColor blackColor];
                 
+                [picker setupNavigationController];
                 [self showViewController:picker sender:nil];
             });
         }];

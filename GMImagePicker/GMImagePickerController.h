@@ -26,6 +26,8 @@ static CGSize const kPopoverContentSize = {480, 720};
 
 - (id)init:(bool)allow_v withAssets: (NSArray*)preSelectedAssets delegate: (id <GMImagePickerControllerDelegate>) delegate;
 
+- (void) setupNavigationController;
+
 @property (nonatomic, assign) BOOL allow_video;
 
 
